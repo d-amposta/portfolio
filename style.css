@@ -83,7 +83,7 @@ h2 {
 .timeline .timeline-event .timeline-content {
   position: relative;
   width: calc(50% - 50px);
-  height: 300px;
+  height: 180px;
 }
 
 .timeline .timeline-event::before {
