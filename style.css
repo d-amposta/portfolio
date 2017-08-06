@@ -63,7 +63,7 @@ h2 {
 .meter {
 	height: 20px;  /* Can be anything */
 	width: 100%;
-	background: #acece6;
+  background: rgb(226,226,226);
 }
 
 .bar {
@@ -140,6 +140,7 @@ h2 {
   border-radius: 50%;
   text-align: center;
   cursor: default;
+  font-size: 20px;
 }
 
 .timeline .timeline-badge i {
