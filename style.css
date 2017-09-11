@@ -35,15 +35,19 @@ p {
 	text-align: center;
 }
 
+.greeting {
+	transform: rotate(-7deg);
+}
+
 header h1 {
 	font-weight: 900;
-	font-size: 6em;
+	font-size: 8.4em;
 	margin-bottom: 0;
 	text-transform: uppercase;
 }
 
 header p {
-	font-size: 3em;
+	font-size: 5em;
 	margin: 0;
 }
 
@@ -63,12 +67,19 @@ header {
 	max-width: 100%;
 	margin: auto;
 	border-radius: ;
+	transition: 0.3s;
+}
+
+#skills img:hover {
+	transform: scale(1);
+	transition: 0.3s;
+	z-index: 1;
 }
 
 .arrow-down {
 	width: 35px;
 	height: 35px;
-	border: 1px solid white;
+	border: 2px solid #2a3a3f;
 	border-radius: 50%;
 	position: absolute;
 	bottom: 15px;
@@ -81,7 +92,8 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: white;
+	color: #2a3a3f;
+	font-weight: bold;
 }
 
 #skills {
@@ -98,6 +110,7 @@ header {
 	color: #2a3a3f;
 }
 
+#skills h2,
 #work h2{
 	color: #2a3a3f;
 	font-weight: 600;
@@ -105,4 +118,21 @@ header {
 
 #work img {
 	max-width: 100%;
+}
+
+.col {
+	position: relative;
+}
+
+.preview {
+	width: auto;
+	border: 1px solid #2a3a3f;
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.preview:hover {
+	border: 2px solid #2a3a3f;
+	transition: 0.3s;
 }
