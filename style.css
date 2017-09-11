@@ -8,21 +8,10 @@ nav,
 	box-shadow: none;
 }
 
-nav .nav-wrapper {
-}
-
-nav ul a {
-	color: black;
-}
-
-nav ul a:hover {
-	background-color: rgba(255,255,255,1);
-	border: 1px solid rgba(255,255,255,0);
-	border-radius: 10px;
-	color: black;
-}
-
-.button-collapse {
+.menu {
+	position: absolute;
+	top: 10px;
+	right: 25px;
 	color: black;
 }
 
@@ -42,13 +31,20 @@ h1 {
 
 h1,
 h2,
-p,
-.back-to-top a {
+p {
 	text-align: center;
 }
 
-h1 {
-	font-weight: 100;
+header h1 {
+	font-weight: 900;
+	font-size: 6em;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+header p {
+	font-size: 3em;
+	margin: 0;
 }
 
 h2 {
@@ -56,27 +52,57 @@ h2 {
 	font-weight: 250;
 }
 
-.back-to-top a div {
-	width: 100%;
-}
-
-.meter {
-	height: 20px;  /* Can be anything */
-	width: 100%;
-  background: rgb(226,226,226);
-}
-
-.bar {
-	height: 100%;
-	/*background: green;*/
-}
-
-.parallax-container,
-#contact {
-	background: rgb(75,75,75);
-}
-
 header {
   background-color: rgb(236,185,57);
+	height: 85vh;
+	position: relative;
 }
 
+#skills img {
+	display: block;
+	max-width: 100%;
+	margin: auto;
+	border-radius: ;
+}
+
+.arrow-down {
+	width: 35px;
+	height: 35px;
+	border: 1px solid white;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.arrow-down .material-icons {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+#skills {
+	padding: 30px 0;
+}
+
+#work {
+	background: #eee;
+	padding: 30px 0;
+}
+
+#work p {
+	text-align: left;
+	color: #2a3a3f;
+}
+
+#work h2{
+	color: #2a3a3f;
+	font-weight: 600;
+}
+
+#work img {
+	max-width: 100%;
+}
