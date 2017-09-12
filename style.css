@@ -2,33 +2,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-nav,
-.nav-wrapper {
-	background-color: rgba(255,255,255,0);
-	box-shadow: none;
-}
-
-.menu {
-	position: absolute;
-	top: 10px;
-	right: 25px;
-	color: black;
-}
-
-h1 {
-	color: ;
-	font-weight: bold;
-	font-size: 3em;
-	letter-spacing: 2px;
-}
-
-.content {
-	width: 100%;
-	position: relative;
-	top: 30%;
-	transform: translateY(-50%);
-}
-
 h1,
 h2,
 p {
@@ -36,30 +9,86 @@ p {
 }
 
 .greeting {
-	transform: rotate(-7deg);
+	/*transform: rotate(-7deg);*/
 }
 
-header h1 {
+.greeting h1 {
 	font-weight: 900;
-	font-size: 8.4em;
+	font-size: 7em;
 	margin-bottom: 0;
 	text-transform: uppercase;
 }
 
-header p {
-	font-size: 5em;
+.greeting p {
+	font-size: 4em;
 	margin: 0;
 }
 
-h2 {
-	font-size: 2.5em;
-	font-weight: 250;
+header .row {
+	position: relative;
+	top: 40%;
+	transform: translateY(-50%);
+}
+
+.links a {
+	display: block;
+	padding: 8px 14px;
+	border: 2px solid rgb(55,46,41);
+	border-radius: 20px;
+	margin: 10px 0;
+	text-align: center;
+	color: rgb(55,46,41);
+	transition: 0.4s;
+}
+
+.links a:hover {
+	border: 2px solid black;
+	color: #2a3a3f;
+	font-weight: bold;
+	transition: 0.4s;
+}
+
+.modal {
+	background: white;
+	height: auto;
+}
+
+.modal-content p {
+	font-size: 1em;
+	text-align: left;
+	font-weight: normal;
 }
 
 header {
   background-color: rgb(236,185,57);
 	height: 85vh;
 	position: relative;
+}
+
+hr {
+	color: #2a3a3f;
+}
+
+.links a:first-child {
+	margin-top: 2.1rem;
+}
+
+.bar {
+	width: 100%;
+	height: 1px;
+	background: #2a3a3f;
+}
+
+.social-media-links {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.social-media-links a {
+	border: 2px solid #2a3a3f;
+	border-radius: 100%;
+	padding: 10px 14px;
+	display: inline;
 }
 
 #skills img {
@@ -71,9 +100,13 @@ header {
 }
 
 #skills img:hover {
-	transform: scale(1);
+	transform: scale(1.1);
 	transition: 0.3s;
 	z-index: 1;
+}
+
+#skills p {
+	font-size: 1.5em;
 }
 
 .arrow-down {
@@ -99,6 +132,8 @@ header {
 #skills {
 	padding: 30px 0;
 }
+
+
 
 #work {
 	background: #eee;
@@ -128,11 +163,56 @@ header {
 	width: auto;
 	border: 1px solid #2a3a3f;
 	padding: 10px;
-	border-radius: 10px;
+	border-radius: 20px;
 	transition: 0.3s;
+	color: #2a3a3f;
 }
 
 .preview:hover {
 	border: 2px solid #2a3a3f;
 	transition: 0.3s;
+}
+
+.peek-a-boo {
+	width: auto;
+	height: auto;
+	background: #2a3a3f;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	display: none;
+}
+
+.peek-a-boo a {
+	display: block;
+}
+
+footer {
+	background: rgb(55, 46, 41);
+}
+
+footer p {
+	margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+
+	header .row {
+		padding: 10% auto;
+	}
+	.greeting h1 {
+		font-size: 5em;
+	}
+
+	.greeting p {
+		font-size: 3em;
+	}
+
+
+
+	.social-media-links a {
+		font-size: 1em;
+		border: none;
+		padding: 0 9px;
+	}
 }

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Darryl Amposta - Web Developer</title>
 
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
@@ -15,17 +16,37 @@
 
 
 	<header>
-		<nav>
-				<a href="#"><i class="material-icons menu">menu</i></a>
-				<div class="side-nav">
-					<a href="#">About Me</a>
-					<a href="#">Download Resume</a>
+			<div class="row">
+				<div class="col m8 offset-m1">
+					<div class="greeting">
+						<h1>Hi! I'm Darryl</h1>
+						<p>I make websites</p>
+					</div>
 				</div>
-		</nav>
-		<div class="greeting">
-			<h1>Hi! I'm Darryl</h1>
-			<p>I make websites</p>
-		</div>
+				<div class="col m2">
+					<div class="links">
+
+						<a href="#about_me" class="modal-trigger">About Me</a>
+
+						<!-- modal content -->
+						<div id="about_me" class="modal">
+							<div class="modal-content">
+								<p>Hi! I’m Darryl. I am a 26 year old former physical therapist now looking for work as a web developer. I enrolled at a coding bootcamp to learn and gain skills so that I can start doing what I love – coding! Head over the “Work” section of my portfolio to see some stuff that I made in the bootcamp! I’m currently doing more of these projects to improve my skills and I’ll add them here once I finished them. I’m open for suggestions and improvements regarding my coding skills so drop me a message on one of my social media accounts if you do.</p>
+							</div>
+						</div>
+						<!--  -->
+
+						<a href="#">Download Resume</a>
+						<div class="bar">
+						</div>
+						<div class="social-media-links">
+							<a href="https://github.com/d-amposta"><i class="fa fa-github" aria-hidden="true"></i></a>
+							<a href="https://www.linkedin.com/in/darryl-amposta-309497131/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							<a href="mailto: darryl.amposta@gmail.com" title="darryl_amposta@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
 		<a href="#skills">
 			<div class="arrow-down">
 				<i class="material-icons">expand_more</i>
@@ -85,8 +106,7 @@
 									<img src="images/capstone1.jpg" alt="Capstone 1">
 								</div>
 								<div class="col m6">
-									<p>Capstone 1</p>
-									<p>Boyd's Anatomy</p>
+									<p><strong>Boyd's Anatomy</strong></p>
 									<p>First project using basics of HTML and CSS. Used Materialize framework.</p>
 									<a href="#" class="preview"><strong>Preview</strong></a>
 								</div>
@@ -97,9 +117,8 @@
 									<img src="images/capstone2.jpg" alt="Capstone 2">
 								</div>
 								<div class="col m6">
-									<p>Capstone 1</p>
-									<p>Boyd's Anatomy</p>
-									<p>First project using basics of HTML and CSS. Used Materialize framework.</p>
+									<p><strong>Shortflix</strong></p>
+									<p>A short film repository built using PHP and MySQL with a bit of Javascript.</p>
 									<a href="#" class="preview"><strong>Preview</strong></a>
 								</div>
 						</div>
@@ -109,9 +128,8 @@
 									<img src="images/capstone3.jpg" alt="Capstone 3">
 								</div>
 								<div class="col m6">
-									<p>Capstone 1</p>
-									<p>Boyd's Anatomy</p>
-									<p>First project using basics of HTML and CSS. Used Materialize framework.</p>
+									<p><strong>Interests</strong></p>
+									<p>A social media where users with similar interests can like each other built using Laravel.</p>
 									<a href="#" class="preview"><strong>Preview</strong></a>
 								</div>
 						</div>
@@ -122,12 +140,18 @@
 		</div>
 	</main>
 
+	<footer>
+		<a href="#">Back to top</a>
+	</footer>
+
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	    <script type="text/javascript" src="js/materialize.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$(".menu").sideNav();
+				$(".menu").click(function() {
+					alert("");
+				});
 				$('.parallax').parallax();
 				$('.scrollspy').scrollSpy();
 				$('.modal').modal();
