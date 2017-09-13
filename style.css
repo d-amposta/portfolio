@@ -91,6 +91,10 @@ hr {
 	display: inline;
 }
 
+.modal-content p {
+	line-height: 30px;
+}
+
 #skills img {
 	display: block;
 	max-width: 100%;
@@ -189,10 +193,28 @@ hr {
 
 footer {
 	background: rgb(55, 46, 41);
+	height: 20vh;
+	color: rgb(240, 199, 94);
+	text-align: center;
 }
 
 footer p {
 	margin: 0;
+	padding: 2.1rem 0 20px 0;
+}
+
+footer a {
+	padding: 0;
+	color: rgb(240, 199, 94);
+	border: 1px solid rgb(240, 199, 94);
+	border-radius: 20px;
+	padding: 10px;
+	transition: 0.3s;
+}
+
+footer a:hover {
+	font-weight: bold;
+	transition: 0.3s;
 }
 
 @media screen and (max-width: 991px) {

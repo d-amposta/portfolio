@@ -15,7 +15,7 @@
 
 
 
-	<header>
+	<header id="top" class="section scrollspy">
 			<div class="row">
 				<div class="col m8 offset-m1">
 					<div class="greeting">
@@ -25,18 +25,8 @@
 				</div>
 				<div class="col m2">
 					<div class="links">
-
 						<a href="#about_me" class="modal-trigger">About Me</a>
-
-						<!-- modal content -->
-						<div id="about_me" class="modal">
-							<div class="modal-content">
-								<p>Hi! I’m Darryl. I am a 26 year old former physical therapist now looking for work as a web developer. I enrolled at a coding bootcamp to learn and gain skills so that I can start doing what I love – coding! Head over the “Work” section of my portfolio to see some stuff that I made in the bootcamp! I’m currently doing more of these projects to improve my skills and I’ll add them here once I finished them. I’m open for suggestions and improvements regarding my coding skills so drop me a message on one of my social media accounts if you do.</p>
-							</div>
-						</div>
-						<!--  -->
-
-						<a href="#">Download Resume</a>
+						<a href="https://drive.google.com/open?id=0BxMx9_gG3nLcOTlpdFRleUxXMWs">Download Resume</a>
 						<div class="bar">
 						</div>
 						<div class="social-media-links">
@@ -47,6 +37,13 @@
 					</div>
 				</div>
 			</div>
+			<!-- modal content -->
+			<div id="about_me" class="modal">
+				<div class="modal-content">
+					<p>Hi! I’m Darryl. I am a 26 year old former physical therapist now looking for work as a web developer. I enrolled at a coding bootcamp to learn and gain skills so that I can start doing what I love – coding! Head over the “Work” section of my portfolio to see some stuff that I made in the bootcamp! I’m currently doing more of these projects to improve my skills and I’ll add them here once I finished them. I’m open for suggestions and improvements regarding my coding skills so drop me a message on one of my social media accounts if you do.</p>
+				</div>
+			</div>
+			<!--  -->
 		<a href="#skills">
 			<div class="arrow-down">
 				<i class="material-icons">expand_more</i>
@@ -91,9 +88,7 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
-
 		</div>
 
 		<div id="work">
@@ -107,8 +102,8 @@
 								</div>
 								<div class="col m6">
 									<p><strong>Boyd's Anatomy</strong></p>
-									<p>First project using basics of HTML and CSS. Used Materialize framework.</p>
-									<a href="#" class="preview"><strong>Preview</strong></a>
+									<p>A learning resource website built using the basics of HTML and CSS.</p>
+									<a href="https://d-amposta.github.io/capstone1/" class="preview"><strong>Preview</strong></a>
 								</div>
 							</div>
 
@@ -136,12 +131,12 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</main>
 
 	<footer>
-		<a href="#">Back to top</a>
+		<p>Made by me</p>
+		<a href="#top">Back to top</a>
 	</footer>
 
 
@@ -149,10 +144,6 @@
 	    <script type="text/javascript" src="js/materialize.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$(".menu").click(function() {
-					alert("");
-				});
-				$('.parallax').parallax();
 				$('.scrollspy').scrollSpy();
 				$('.modal').modal();
 			})
