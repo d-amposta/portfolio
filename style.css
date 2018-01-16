@@ -313,4 +313,8 @@ footer a:hover {
 	.greeting p {
 		font-size: 25px;
 	}
+
+	#work img {
+		margin-bottom: 10px;
+	}
 }
