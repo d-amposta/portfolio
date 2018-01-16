@@ -1,130 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Darryl Amposta - Web Developer</title>
-
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Darryl Amposta - Web Developer</title>
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
 
 
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#top">Darryl Amposta</a>
+		    </div>
 
-	<header id="top" class="section scrollspy">
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#about">About</a></li>
+		        <li><a href="#work">Work</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<header id="top">
 			<div class="row">
-				<div class="col m8 offset-m1">
+				<div class="col-xs-12">
 					<div class="greeting">
-						<h1>Hi! I'm Darryl</h1>
-						<p>I make websites</p>
-					</div>
-				</div>
-				<div class="col m2">
-					<div class="links">
-						<a href="#about_me" class="modal-trigger">About Me</a>
-						<a href="https://drive.google.com/open?id=0BxMx9_gG3nLcOTlpdFRleUxXMWs">Download Resume</a>
-						<div class="bar">
-						</div>
-						<div class="social-media-links">
-							<a href="https://github.com/d-amposta"><i class="fa fa-github" aria-hidden="true"></i></a>
-							<a href="https://www.linkedin.com/in/darryl-amposta-309497131/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-							<a href="mailto: darryl.amposta@gmail.com" title="darryl_amposta@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-						</div>
+						<h1>Darryl Amposta</h1>
+						<p>Web Developer</p>
 					</div>
 				</div>
 			</div>
-			<!-- modal content -->
-			<div id="about_me" class="modal">
-				<div class="modal-content">
-					<p>Hi! I’m Darryl. I am a 26 year old former physical therapist now looking for work as a web developer. I enrolled at a coding bootcamp to learn and gain skills so that I can start doing what I love – coding! Head over the “Work” section of my portfolio to see some stuff that I made in the bootcamp! I’m currently doing more of these projects to improve my skills and I’ll add them here once I finished them. I’m open for suggestions and improvements regarding my coding skills so drop me a message on one of my social media accounts if you do.</p>
-				</div>
-			</div>
-			<!--  -->
-		<a href="#skills">
+			
+		<a href="#about">
 			<div class="arrow-down">
-				<i class="material-icons">expand_more</i>
+				<span class="glyphicon glyphicon-chevron-down"></span>
 			</div>
 		</a>
 	</header>
 
 	<main>
-		<div class="container">
-			<div id="skills" class="section scrollspy">
+		<div id="about">
+			<div class="container">
 				<div class="row">
-					<div class="col">
-						<h2>Skills</h2>
-						<p>These are the languages/frameworks I've learned at a coding bootcamp</p>
-						<div class="row">
-							<div class="col s6 m3">
-								<img src="images/html5.jpg" alt="HTML">
-							</div>
-							<div class="col s6 m3">
-								<img src="images/css3.jpg" alt="CSS">
-							</div>
-							<div class="col s6 m3">
-								<img src="images/bootstrap.png" alt="Bootstrap">
-							</div>
-							<div class="col s6 m3">
-								<img src="images/JavaScript.png" alt="Javascript">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s6 m3">
-								<img src="images/jquery.gif" alt="jquery">
-							</div>
-							<div class="col s6 m3">
-								<img src="images/php.jpg" alt="PHP">
-							</div>
-							<div class="col s6 m3">
-								<img src="images/MySQL.jpg" alt="MySQL">
-							</div>
-							<div class="col s6 m3">
-								<img src="images/laravel.jpg" alt="Laravel">
-							</div>
-						</div>
+					<div class="col-xs-12">
+						<h2>About Me</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-5 col-xs-offset-1">
+						<h3>Skills</h3>
+						<p><strong>Languages: </strong>HTML5, CSS3, Javascript, jQuery, PHP, MySQL</p>
+						<p><strong>Technologies: </strong>AJAX, JSON</p>
+						<p><strong>Frameworks: </strong>Bootstrap, Materialize, Laravel</p>
+					</div>
+					<div class="col-xs-5">
+						<h3>Experience and Achievements</h3>
+						<ul>
+							<li>Attended an <strong>IT Coding Bootcamp</strong> at Tuitt Philippines (2017)</li>
+							<li>Former <strong>Physical Therapist</strong> (2014-2017)</li>
+							<li>Took a Post-Graduate Course on <strong>Occupational Health and Safety</strong> at the University of The Philippines-Manila (2017)</li>
+							<li>Worked as a <strong>Part-time Instructor</strong> of physical therapy students (2013)</li>
+							<li>Passed the Physical Therapist Licensure Examination (2013)</li>
+							<li>Graduated BS in Physical Therapy at De La Salle Health Sciences Institute (2012)</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<div id="work">
 			<div class="container">
 				<div class="row">
-					<div class="col l12">
+					<div class="col-xs-12">
 						<h2>Work</h2>
-						<div class="row">
-								<div class="col m6">
-									<img src="images/capstone1.jpg" alt="Capstone 1">
-								</div>
-								<div class="col m6">
-									<p><strong>Boyd's Anatomy</strong></p>
-									<p>A learning resource website built using the basics of HTML and CSS.</p>
-									<a href="https://d-amposta.github.io/capstone1/" class="preview"><strong>Preview</strong></a>
-								</div>
+						<div class="row project">
+							<div class="col-sm-6">
+								<a href="https://d-amposta.github.io/capstone1/"><img src="images/capstone1.jpg" alt="Boyd's Anatomy"></a>
 							</div>
-
-							<div class="row">
-								<div class="col m6">
-									<img src="images/capstone2.jpg" alt="Capstone 2">
-								</div>
-								<div class="col m6">
-									<p><strong>Shortflix</strong></p>A blog featuring short films I found in the web built using PHP and MySQL with a bit of Javascript.</p>
-									<a href="http://notdarryl.x10host.com/shortflix/index.php" class="preview"><strong>Preview</strong></a>
-								</div>
+							<div class="col-sm-6">
+								<a href="https://d-amposta.github.io/capstone1/"><p><strong>Boyd's Anatomy</strong></p></a>
+								<p>A learning resource website built using the basics of HTML and CSS.</p>
+							</div>
 						</div>
 
-						<div class="row">
-								<div class="col m6">
-									<img src="images/capstone3.jpg" alt="Capstone 3">
+						<div class="row project">
+							<div class="col-sm-6">
+								<a href="http://shortflix.000webhostapp.com"><img src="images/capstone2.jpg" alt="ShortFlix"></a>
+							</div>
+							<div class="col-sm-6">
+								<a href="http://shortflix.000webhostapp.com"><p><strong>ShortFlix</strong></p></a>
+								<p>A personal short film repository featuring videos I found in the web built using PHP and MySQL with a bit of Javascript.</p>
+							</div>
+						</div>
+
+						<div class="row project">
+								<div class="col-sm-6">
+									<a href="http://twinterests.herokuapp.com/"><img src="images/capstone3.jpg" alt="Interests"></a>
 								</div>
-								<div class="col m6">
-									<p><strong>Interests</strong></p>
+								<div class="col-sm-6">
+									<a href="http://twinterests.herokuapp.com/"><p><strong>Interests</strong></p></a>
 									<p>A social media where users with similar interests can like each other built using Laravel.</p>
-									<a href="http://twinterests.herokuapp.com/" class="preview"><strong>Preview</strong></a>
 								</div>
 						</div>
 					</div>
@@ -134,18 +127,46 @@
 	</main>
 
 	<footer>
-		<p>Made by me</p>
-		<a href="#top">Back to top</a>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="social-media-links">
+					<a href="https://github.com/d-amposta"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+					<a href="https://www.linkedin.com/in/darryl-amposta-309497131/"><i class="fa fa-linkedin" aria-hidden="true"></i> Linked-In</a>
+					<a href="mailto: darryl.amposta@gmail.com" title="darryl_amposta@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+				</div>
+				<div class="back-to-top">
+				<a href="#top"><span class="glyphicon glyphicon-chevron-up"></span> Back to top</a>
+				</div>
+				<p>Copyright &copy darrylamposta</p>
+			</div>
+		</div>
 	</footer>
 
 
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	    <script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
 		<script>
-			$(document).ready(function(){
-				$('.scrollspy').scrollSpy();
-				$('.modal').modal();
-			})
+			$(document).ready(function() {
+				
+				//change navbar property on scroll
+				var scrollTop = 0;
+				$(window).scroll(function() {
+					scrollTop = $(window).scrollTop();
+
+					if(scrollTop >= 100) {
+						$(".navbar").addClass("navbar-change");
+					}else if (scrollTop < 100) {
+						$(".navbar").removeClass("navbar-change");
+					}
+				});
+
+				// smooth scroll to anchor
+				$('a[href*=\\#]').on('click', function() {
+					$('html, body').animate({
+						scrollTop: $(this.hash).offset().top - 50
+					}, 300);
+				});
+			});
 		</script>
 
 </body>
