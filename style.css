@@ -245,6 +245,11 @@ hr {
 	margin: 20px auto;
 }
 
+.title {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
 .col {
 	position: relative;
 }
