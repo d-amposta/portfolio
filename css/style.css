@@ -152,6 +152,10 @@ footer {
 	text-decoration: none;
 }
 
+.text-helper {
+	font-size: 0.9em;
+}
+
 #contact {
 	background-color: #f8f8f8;
 	margin-bottom: 0;
