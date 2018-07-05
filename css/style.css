@@ -49,20 +49,32 @@ header {
 	width: 100%;
 }
 
-#top {
-	display: flex;
-	align-items: center;
+.greeting {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-.greeting {
-	border-left: 5px solid #7ba7ba;
-	font-weight: 300;
-	width: 100%;
+.greeting h1 {
+	color: #9d9d9d;
+	font-size: 3.5em;
+	font-weight: 700;
+	line-height: 1em;
+	margin: 0;
+	text-transform: uppercase;
 }
 
-.greeting {
-	font-size: 2.3em/**/;
-	padding: 0 10px;
+.greeting h1:nth-of-type(2n) {
+	color: #7ba7ba;
+}
+
+.type-text {
+	color: #403f3f;
+	display: block;
+	font-size: 1.2em;
+	font-weight: 500;
+	height: 50px;
+	margin-top: 15px;
 }
 
 .section,
@@ -76,10 +88,6 @@ footer {
 
 #about .section-header {
 	color: #7ba7ba;
-}
-
-#work .section-header {
-	font-weight: 300;
 }
 
 .project {
@@ -233,19 +241,18 @@ footer a:hover {
 		padding: 30px 70px;
 	}
 
-	header {
-		min-height: 475px;
-	}
-
 	#top,
 	.section {
 		margin-bottom: 30px;
 	}
 
-	.greeting {
-		font-size: 3em;
-		position: relative;
-		width: 70%;
+	.greeting h1 {
+		font-size: 5.8em;
+	}
+
+	.type-text {
+		font-size: 2em;
+		margin-top: 30px;
 	}
 
 	.section-header {
@@ -313,8 +320,6 @@ footer a:hover {
 	}
 
 	header {
-		display: flex;
-		align-items: center;
 		margin-top: unset;
 	}
 
@@ -329,11 +334,18 @@ footer a:hover {
 
 	.greeting {
 		width: 100%;
-		/*position: absolute;
-		top: 250px;*/
 		color: #403f3f;
 		text-shadow: 0.5px 0.5px 1px #fff;
+		padding: 0 20px;
+	}
+
+	.greeting h1 {
+		font-size: 6em;
+	}
+
+	.type-text {
 		font-size: 2.5em;
+		height: 80px;
 	}
 
 	.section-header {
@@ -357,8 +369,9 @@ footer a:hover {
 		font-size: 1.5em;
 	}
 
-	.img-container img {
-		width: 100%;
+	#work .section-header h2 {
+		font-weight: 700;
+		text-transform: uppercase;
 	}
 
 	.project {
@@ -385,7 +398,5 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-	.greeting {
-		font-size: 3.2em;
-	}
+
 }

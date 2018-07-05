@@ -23,13 +23,10 @@ $(document).ready(function() {
 		$(this).next('.project-text').slideToggle();
 	});
 
-	$(".greeting").typewrite({
+	$(".type-text").typewrite({
 		actions: [
 			{delay: 500},
-			{type: "Hi"},
-			{type: ", I'm Darryl, "},
-			{delay: 1000},
-			{type: "web developer"}
+			{type: "&ltp&gt Web Developer &lt/p&gt"}
 		]
 	});
 
