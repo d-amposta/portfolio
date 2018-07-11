@@ -13,7 +13,7 @@ $(document).ready(function() {
 	});
 
 	// smooth scroll to anchor
-	$('a[href*=\\#]').on('click', function() {
+	$('nav a[href*=\\#]').on('click', function() {
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
 		}, 300);
